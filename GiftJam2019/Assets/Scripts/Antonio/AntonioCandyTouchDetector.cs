@@ -12,7 +12,7 @@ public class AntonioCandyTouchDetector : MonoBehaviour
             AddPoint(candyPointsComponent);
         }
     }
-
+    
     private void AddPoint(CandyPointsComponent candyPointsComponent)
     {
         Debug.Log(candyPointsComponent.GetPoints());

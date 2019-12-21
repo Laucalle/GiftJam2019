@@ -15,9 +15,19 @@ public class AntonioMovement : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(left)) {
-            transform.Translate(-1*(movementSpeed*Time.deltaTime),0,0);
-        } else if(Input.GetKey(right)){
-            transform.Translate((movementSpeed*Time.deltaTime),0,0);
+            MoveLeft();
+        } else if(Input.GetKey(right)) {
+            MoveRight();
         } 
+    }
+
+    private void MoveLeft()
+    {
+        transform.Translate(-1*(movementSpeed*Time.deltaTime),0,0);
+    }
+
+    private void MoveRight()
+    {
+        transform.Translate((movementSpeed*Time.deltaTime),0,0);
     }
 }
