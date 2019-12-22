@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class MiniGameManager : MonoBehaviour
 {
     bool running = false;
-    Score score;
+    protected Score score;
 
     public int ID;
     public float time;
@@ -27,7 +27,7 @@ public class MiniGameManager : MonoBehaviour
     }
 
     // Use this for initialization
-    void Start()
+    void Awake()
     {
         // Score takes care of updating the display
         score = FindObjectOfType<Score>();
@@ -38,12 +38,12 @@ public class MiniGameManager : MonoBehaviour
     }
 
     // Must be called in update
-    void CheckTimer()
+    protected void CheckTimer()
     {
         if (running)
         {
             timer += Time.deltaTime;
-            if(timer <= time)
+            if(timer >= time)
             {
                 running = false;
                 StartCoroutine(End());
@@ -53,8 +53,11 @@ public class MiniGameManager : MonoBehaviour
 
     public void AddPoints(int amount)
     {
-        int points = score.GetScore(ID);
-        score.SetScore(ID, points + amount);
+        if (running)
+        {
+            int points = score.GetScore(ID);
+            score.SetScore(ID, points + amount);
+        }
     }
 
 
@@ -66,13 +69,15 @@ public class MiniGameManager : MonoBehaviour
             yield return new WaitForSeconds(1f);
         }
         running = true;
+        countdown.gameObject.SetActive(false);
     }
 
     private IEnumerator End()
     {
-        end.enabled = true;
+        end.gameObject.SetActive(true);
         yield return new WaitForSeconds(timeToEnd);
-        end.enabled = false;
+
+        end.gameObject.SetActive(false);
         SceneManager.LoadScene("Menu");
     }
 

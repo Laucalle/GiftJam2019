@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AntonioCandyTouchDetector : MonoBehaviour
 {
+    public AntonioManager GM;
     private void OnTriggerEnter(Collider other)
     {
         CandyPointsComponent candyPointsComponent;
@@ -16,6 +17,7 @@ public class AntonioCandyTouchDetector : MonoBehaviour
     
     private void AddPoint(CandyPointsComponent candyPointsComponent)
     {
-        Debug.Log(candyPointsComponent.GetPoints());
+        GM.AddPoints(candyPointsComponent.GetPoints());
+        Debug.Log("Catched sth");
     }
 }

@@ -12,6 +12,7 @@ public class ShootingStarComponent : MonoBehaviour
     [SerializeField]
     private float timeToDestroy;
 
+    bool dead = false;
     public void Start()
     {
         DestroyAfterTime();
@@ -23,11 +24,13 @@ public class ShootingStarComponent : MonoBehaviour
 
     public void TrapStar()
     {
-        Destroy(gameObject);
+        Destroy(gameObject, 1f);
+        dead = true;
     }
 
     private void Move()
     {
+        if (dead) return;
         transform.Translate(new Vector3(xAxisSpeed*Time.deltaTime, yAxisSpeed*Time.deltaTime,0));
     }
     

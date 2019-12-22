@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MouseController : MonoBehaviour
 {
+    public NetAnimation net;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +14,10 @@ public class MouseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.position = new Vector3(mousePosition.x, mousePosition.y, transform.position.z);
         if (Input.GetMouseButtonDown(0)) {
+            net.Go(transform.position);
             RaycastHit raycastHit;
 
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

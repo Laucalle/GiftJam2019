@@ -15,8 +15,8 @@ public enum SCENES
 public class Score : MonoBehaviour
 {
     public static Score SC;
-    private int[] scores;
-    int total = 0;
+    private int[] scores = new int[(int)SCENES.MENU];
+    int total;
     public Text display;
     public SCENES current_scene;
     // Start is called before the first frame update
@@ -28,8 +28,9 @@ public class Score : MonoBehaviour
         } else
         {
             SC = this;
+            DontDestroyOnLoad(this);
         }
-        DontDestroyOnLoad(this);
+        
     }
 
     public int GetScore(int idx)
@@ -48,10 +49,10 @@ public class Score : MonoBehaviour
     {
         switch(current_scene){
             case SCENES.MENU:
-                display.text = total.ToString();
+                display.text = total.ToString("0000");
                 break;
             default:
-                display.text = scores[(int)current_scene].ToString();
+                display.text = scores[(int)current_scene].ToString("0000");
                 break;
         }
 
