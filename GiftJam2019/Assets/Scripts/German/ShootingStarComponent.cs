@@ -14,7 +14,7 @@ public class ShootingStarComponent : MonoBehaviour
 
     public void Start()
     {
-        Destroy();
+        DestroyAfterTime();
     }
     public void Update()
     {
@@ -31,7 +31,7 @@ public class ShootingStarComponent : MonoBehaviour
         transform.Translate(new Vector3(xAxisSpeed*Time.deltaTime, yAxisSpeed*Time.deltaTime,0));
     }
     
-    private void Destroy()
+    private void DestroyAfterTime()
     {
         Destroy(gameObject,timeToDestroy);
     }
