@@ -10,6 +10,7 @@ public class AntonioCandyTouchDetector : MonoBehaviour
         candyPointsComponent = other.GetComponent(typeof(CandyPointsComponent)) as CandyPointsComponent;
         if (null != candyPointsComponent) {
             AddPoint(candyPointsComponent);
+            Destroy(candyPointsComponent.gameObject);
         }
     }
     
