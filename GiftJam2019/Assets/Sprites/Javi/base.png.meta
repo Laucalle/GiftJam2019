@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: bb7e837e80a47374c8cd47e0949c594c
+guid: 7100fbb8ffbed2446be3184014f22f52
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2253639577306037883
-    second: Antonio_0
+      213: -3966044189379602213
+    second: base_0
   - first:
-      213: -5338153101640517777
-    second: Antonio_1
-  - first:
-      213: 7362802858905436394
-    second: Antonio_2
-  - first:
-      213: 8441223008095738405
-    second: Antonio_3
+      213: 5214576322002826026
+    second: base_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -54,7 +48,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -118,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Antonio_2
+      name: base_0
       rect:
         serializedVersion: 2
-        x: 78
+        x: 0
         y: 0
-        width: 140
-        height: 163
+        width: 111
+        height: 190
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +126,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59f27473ad084da45bc68db2dbbff536
-      internalID: 7362802858905436394
+      spriteID: 3a5b4614582f8c24384197e0e14a07ad
+      internalID: -3966044189379602213
       vertices: []
       indices: 
       edges: []
@@ -141,7 +135,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7876a7f3f9e488642ba59aaec20f025f
+    spriteID: 8730e887f9a2dad46a1601b2b967de9d
     internalID: 0
     vertices: []
     indices: 
