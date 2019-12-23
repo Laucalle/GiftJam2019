@@ -24,7 +24,7 @@ public class Score : MonoBehaviour
     {
         if(SC != null)
         {
-            GameObject.Destroy(SC);
+            GameObject.Destroy(this);
         } else
         {
             SC = this;

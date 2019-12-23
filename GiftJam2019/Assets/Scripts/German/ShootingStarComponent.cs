@@ -38,4 +38,9 @@ public class ShootingStarComponent : MonoBehaviour
     {
         Destroy(gameObject,timeToDestroy);
     }
+    public void SetSpeed(Vector2 v)
+    {
+        xAxisSpeed = v.x;
+        yAxisSpeed = v.y;
+    }
 }

@@ -5,6 +5,9 @@ using UnityEngine;
 public class MouseController : MonoBehaviour
 {
     public NetAnimation net;
+    public GermanManager GM;
+    public int pointsPerStart;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +29,7 @@ public class MouseController : MonoBehaviour
                 ShootingStarComponent shootingStarComponent = raycastHit.collider.GetComponent(typeof(ShootingStarComponent)) as ShootingStarComponent;
                 if(null != shootingStarComponent ) {
                     shootingStarComponent.TrapStar();
+                    GM.AddPoints(pointsPerStart);
                 }
             }
         }
