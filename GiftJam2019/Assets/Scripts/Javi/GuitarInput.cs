@@ -6,6 +6,12 @@ public class GuitarInput : MonoBehaviour
 {
     [SerializeField]
     private KeyCode [] keySecuence;
+    [SerializeField]
+    private JaviManager javiManager;
+
+    [SerializeField]
+    private int pointsAdditionPerSecuence;
+
     private int nextKeyIndexExpected;
 
     void Start()
@@ -33,11 +39,10 @@ public class GuitarInput : MonoBehaviour
 
     private void AddPoints()
     {
-        Debug.Log("asertaste wey");
+        javiManager.AddPoints(pointsAdditionPerSecuence);
     }
     private void Fail()
     {
-        Debug.Log("FAIL");
         nextKeyIndexExpected = 0;
     }
 }
