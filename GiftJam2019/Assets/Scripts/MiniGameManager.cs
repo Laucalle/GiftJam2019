@@ -13,6 +13,9 @@ public class MiniGameManager : MonoBehaviour
     public float time;
     public Text score_display;
     public Text countdown;
+    public AudioSource AS;
+    public AudioClip beep;
+    public AudioClip end_beep;
     public float timeToEnd;
     public Image end;
 
@@ -47,6 +50,8 @@ public class MiniGameManager : MonoBehaviour
             {
                 running = false;
                 StartCoroutine(End());
+                AS.clip = end_beep;
+                AS.Play();
             }
         }
     }
@@ -66,6 +71,8 @@ public class MiniGameManager : MonoBehaviour
         for (int i = 3; i > 0; i--)
         {
             countdown.text = i.ToString();
+            AS.clip = beep;
+            AS.Play();
             yield return new WaitForSeconds(1f);
         }
         running = true;
