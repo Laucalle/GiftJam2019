@@ -9,6 +9,8 @@ public class CrstinaDropBall : MonoBehaviour
     [SerializeField]
     private KeyCode dropBallKey;
     private BallComponent currentBall;
+    [SerializeField]
+    private CristinaGameManager cristinaGameManager;
 
     void Start()
     {
@@ -20,6 +22,7 @@ public class CrstinaDropBall : MonoBehaviour
     {
         if (Input.GetKeyDown(dropBallKey) && null != currentBall) {
             currentBall.Drop();
+            cristinaGameManager.AddPoints(currentBall.GetPoints());
         }
     }
 
@@ -28,6 +31,7 @@ public class CrstinaDropBall : MonoBehaviour
         BallComponent currentBall = otherColliedr.GetComponent(typeof(BallComponent)) as BallComponent;
         if (null != currentBall) {
             this.currentBall = currentBall;
+            Debug.Log("tengo una bola");
         }
     }
 
