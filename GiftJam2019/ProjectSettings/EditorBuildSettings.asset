@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/German.unity
     guid: 458545aaa1f323a4fa2cc03a7400634f
+  - enabled: 1
+    path: Assets/Scenes/Javi.unity
+    guid: 2e1e9b44c330c28438f61cc77a9fc093
   m_configObjects: {}
