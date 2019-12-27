@@ -2092,7 +2092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab242120fbd9194b827860f4f8c85aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: Javi
+  SceneName: Cristina
 --- !u!65 &1871333763
 BoxCollider:
   m_ObjectHideFlags: 0
