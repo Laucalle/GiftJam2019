@@ -8,6 +8,7 @@ public class MouseController : MonoBehaviour
     public GermanManager GM;
     public int pointsPerStart;
 
+    public AudioSource Hit_sfx;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,8 +28,9 @@ public class MouseController : MonoBehaviour
 
             if(Physics.Raycast(ray, out raycastHit)) {
                 ShootingStarComponent shootingStarComponent = raycastHit.collider.GetComponent(typeof(ShootingStarComponent)) as ShootingStarComponent;
-                if(null != shootingStarComponent ) {
+                if(null != shootingStarComponent && !shootingStarComponent.dead) {
                     shootingStarComponent.TrapStar();
+                    Hit_sfx.Play();
                     GM.AddPoints(pointsPerStart);
                 }
             }

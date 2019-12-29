@@ -23,6 +23,10 @@ public class CristinaMovement : MonoBehaviour
     private ClimbComponent currentClimbComponent;
     private bool isClimbing;
 
+    public Animator anim;
+    public AudioSource AS;
+    public AudioClip climb_sfx;
+
     void Start()
     {
         currentClimbComponent = null;
@@ -38,18 +42,24 @@ public class CristinaMovement : MonoBehaviour
         } else if (Input.GetKey(moveRightKey)) {
             MoveRight();
         } else if(Input.GetKey(climbKey)) {
+            anim.SetFloat("speed", 0);
             BeginClimbing();
+        } else
+        {
+            anim.SetFloat("speed", 0);
         }
     }
 
     private void MoveLeft()
     {
         transform.Translate(new Vector3(-1*movementSpeed*Time.deltaTime,0,0));
+        anim.SetFloat("speed", -1);
     }
 
     private void MoveRight()
     {
         transform.Translate(new Vector3(movementSpeed*Time.deltaTime,0,0));
+        anim.SetFloat("speed", 1);
     }
 
     private void Climb()
@@ -58,6 +68,7 @@ public class CristinaMovement : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, currentClimbComponent.GetClimbComponent().transform.position, climbSpeed*Time.deltaTime);
         } else {
             isClimbing = false;
+            anim.SetBool("climbing", isClimbing);
         }
     }
 
@@ -66,6 +77,9 @@ public class CristinaMovement : MonoBehaviour
         if(null != currentClimbComponent)
         {
             isClimbing = true;
+            AS.clip = climb_sfx;
+            AS.Play();
+            anim.SetBool("climbing", isClimbing);
         }
     }
 

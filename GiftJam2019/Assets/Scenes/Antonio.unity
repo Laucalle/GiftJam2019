@@ -341,6 +341,7 @@ GameObject:
   - component: {fileID: 354669768}
   - component: {fileID: 354669767}
   - component: {fileID: 354669766}
+  - component: {fileID: 354669771}
   m_Layer: 0
   m_Name: Antonio
   m_TagString: Untagged
@@ -390,6 +391,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GM: {fileID: 499713009}
+  AS: {fileID: 354669771}
+  win_sfx: {fileID: 8300000, guid: 4556fad61ee555744aaa302d8be9f25f, type: 3}
+  lose_sfx: {fileID: 8300000, guid: b7386e8b419bfe54ca2f27787f3ef2c0, type: 3}
 --- !u!114 &354669769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,6 +425,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &354669771
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354669765}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &359413207
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,6 +642,7 @@ MonoBehaviour:
   AS: {fileID: 499713011}
   beep: {fileID: 8300000, guid: 2f20f98740c05c447b67e76ecd8369e8, type: 3}
   end_beep: {fileID: 8300000, guid: 90a888561008eb44cb6d534245fcc0f2, type: 3}
+  main_theme: {fileID: 8300000, guid: 1f6b3987eba65374c9428308adbc9314, type: 3}
   timeToEnd: 5
   end: {fileID: 1892774112}
   max_spawn: {fileID: 571644631}
@@ -963,10 +1064,10 @@ RectTransform:
   m_Father: {fileID: 1892774111}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.3, y: 0.485}
-  m_AnchorMax: {x: 0.7, y: 0.7}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.42900002}
+  m_AnchorMax: {x: 1, y: 0.5647742}
+  m_AnchoredPosition: {x: 0, y: 0.96500015}
+  m_SizeDelta: {x: -144.77, y: -1.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1159496128
 MonoBehaviour:
@@ -988,9 +1089,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 0332e739c0a180249b3a18faa0ca78c2, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1039,7 +1140,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: -0.30663055, y: -0.53300005}
   m_AnchorMax: {x: 1.3148408, y: 0}
-  m_AnchoredPosition: {x: 0.5, y: -0.29000092}
+  m_AnchoredPosition: {x: 0.5, y: -0.2899933}
   m_SizeDelta: {x: -1, y: 0.59000015}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1299287200

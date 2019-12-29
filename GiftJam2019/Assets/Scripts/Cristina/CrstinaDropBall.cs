@@ -12,6 +12,10 @@ public class CrstinaDropBall : MonoBehaviour
     [SerializeField]
     private CristinaGameManager cristinaGameManager;
 
+    public Animator anim;
+    public AudioSource AS;
+    public AudioClip sfx;
+
     void Start()
     {
         currentBall = null;
@@ -22,6 +26,10 @@ public class CrstinaDropBall : MonoBehaviour
     {
         if (Input.GetKeyDown(dropBallKey) && null != currentBall) {
             currentBall.Drop();
+            anim.SetTrigger("paw");
+            AS.clip = sfx;
+            AS.pitch = Random.Range(0.8f, 1.2f);
+            AS.Play();
             cristinaGameManager.AddPoints(currentBall.GetPoints());
         }
     }

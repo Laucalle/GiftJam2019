@@ -16,6 +16,7 @@ public class MiniGameManager : MonoBehaviour
     public AudioSource AS;
     public AudioClip beep;
     public AudioClip end_beep;
+    public AudioClip main_theme;
     public float timeToEnd;
     public Image end;
 
@@ -51,6 +52,7 @@ public class MiniGameManager : MonoBehaviour
                 running = false;
                 StartCoroutine(End());
                 AS.clip = end_beep;
+                AS.volume = 1f;
                 AS.Play();
             }
         }
@@ -77,6 +79,9 @@ public class MiniGameManager : MonoBehaviour
         }
         running = true;
         countdown.gameObject.SetActive(false);
+        AS.clip = main_theme;
+        AS.volume = 0.8f;
+        AS.Play();
     }
 
     private IEnumerator End()

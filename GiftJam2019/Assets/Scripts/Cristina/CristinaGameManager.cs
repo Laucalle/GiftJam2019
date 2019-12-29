@@ -9,4 +9,8 @@ public class CristinaGameManager : MiniGameManager
     {
         score.current_scene = SCENES.CRIS;
     }
+    private void Update()
+    {
+        CheckTimer();
+    }
 }

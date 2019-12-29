@@ -12,7 +12,7 @@ public class ShootingStarComponent : MonoBehaviour
     [SerializeField]
     private float timeToDestroy;
 
-    bool dead = false;
+    public bool dead = false;
     public void Start()
     {
         DestroyAfterTime();

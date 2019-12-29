@@ -10,6 +10,7 @@ public class BallRespawner : MonoBehaviour
     private float spawnTimer = 0;
     public float spawnFreq = 0;
 
+    public AudioSource win;
      void Start()
      {
         isBallActive = false;
@@ -32,6 +33,7 @@ public class BallRespawner : MonoBehaviour
     public void SetBallAsInActive()
     {
         isBallActive = false;
+        win.Play();
         spawnTimer = 0;
         spawnFreq = Random.Range(2,7);
     }
