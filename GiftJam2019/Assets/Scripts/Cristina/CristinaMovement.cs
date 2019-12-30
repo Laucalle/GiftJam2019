@@ -102,4 +102,14 @@ public class CristinaMovement : MonoBehaviour
             Debug.Log(this.currentClimbComponent);
         }
     }
+
+    private void OnTriggerStay(Collider otherCollider)
+    {
+        ClimbComponent climbComponent;
+        climbComponent = otherCollider.GetComponent(typeof(ClimbComponent)) as ClimbComponent;
+        if (null != climbComponent && !isClimbing) {
+            currentClimbComponent = climbComponent;
+            Debug.Log(this.currentClimbComponent);
+        }
+    }
 }
