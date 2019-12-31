@@ -6,9 +6,25 @@ using UnityEngine.SceneManagement;
 public class Button : MonoBehaviour
 {
     public string SceneName;
+    public AudioSource AS;
     // Start is called before the first frame update
     private void OnMouseDown()
     {
-        SceneManager.LoadScene(SceneName);
+        StartCoroutine(LoadYourAsyncScene());
+        if(AS != null)
+        {
+            AS.Play();
+        }
+    }
+    IEnumerator LoadYourAsyncScene()
+    {
+
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneName);
+
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
     }
 }
