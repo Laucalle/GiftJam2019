@@ -36,6 +36,7 @@ public class MiniGameManager : MonoBehaviour
         // Score takes care of updating the display
         score = FindObjectOfType<Score>();
         score.display = score_display;
+        score.SetScore(ID, 0);
 
         StartCoroutine(CountDown());
         timer = 0;
