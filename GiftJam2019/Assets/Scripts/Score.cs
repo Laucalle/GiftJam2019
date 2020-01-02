@@ -9,6 +9,7 @@ public enum SCENES
     CRIS,
     GERMAN,
     JAVI,
+    LAURA,
     MENU
 }
 
