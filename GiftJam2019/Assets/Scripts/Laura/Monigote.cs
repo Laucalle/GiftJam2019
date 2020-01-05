@@ -18,6 +18,9 @@ public class Monigote : MonoBehaviour
     [SerializeField]
     private int points = 5;
 
+    [SerializeField]
+    AudioSource win;
+
     void Update()
     {
         if (moving) {
@@ -36,6 +39,7 @@ public class Monigote : MonoBehaviour
                 ChangeToColoredSprite();
                 moving = true;
                 gameManager.AddPoints(points);
+                win.Play();
                 Destroy(transform.gameObject,3);
             }
         }
