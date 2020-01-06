@@ -10,6 +10,7 @@ public enum SCENES
     GERMAN,
     JAVI,
     LAURA,
+    SERGIO,
     MENU
 }
 
