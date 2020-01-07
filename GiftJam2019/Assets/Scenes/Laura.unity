@@ -146,11 +146,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 36553142}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be0f7bf15daf51442a185ccd8c82c174, type: 3}
+  m_Script: {fileID: 11500000, guid: f6b2dfd9433bf5f41a252784c0350c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 2018449977}
+  - {fileID: 2018449978}
+  - {fileID: 1614576975}
+  - {fileID: 2006111406}
   spawnFreq: 3
 --- !u!4 &36553144
 Transform:
@@ -402,13 +404,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 197094919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be0f7bf15daf51442a185ccd8c82c174, type: 3}
+  m_Script: {fileID: 11500000, guid: f6b2dfd9433bf5f41a252784c0350c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 2018449977}
-  - {fileID: 1614576974}
-  - {fileID: 2006111405}
+  - {fileID: 2018449978}
+  - {fileID: 1614576975}
+  - {fileID: 2006111406}
   spawnFreq: 3
 --- !u!4 &197094921
 Transform:
@@ -480,13 +482,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 426250888}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be0f7bf15daf51442a185ccd8c82c174, type: 3}
+  m_Script: {fileID: 11500000, guid: f6b2dfd9433bf5f41a252784c0350c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 2018449977}
-  - {fileID: 1614576974}
-  - {fileID: 2006111405}
+  - {fileID: 2018449978}
+  - {fileID: 1614576975}
+  - {fileID: 2006111406}
   spawnFreq: 3
 --- !u!4 &426250890
 Transform:
@@ -629,24 +631,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 457566208}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a538b31df2e42d4aa9b2c6f7d76b77a, type: 3}
+  m_Script: {fileID: 11500000, guid: e2aee6c0f751f16499c07620ef56f356, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 180
   leftMovementKey: 97
   rightMovementKey: 100
-  shootKey: 115
+  shootKey: 32
   templateBullet:
   - {fileID: 1170557693}
-  - {fileID: 1794194819}
   - {fileID: 1245233824}
+  - {fileID: 1794194819}
   pointOfPencil: {fileID: 46099148}
   timeBetweenShoot: 0.5
-  changeColorKey: 32
+  changeColorKey: 115
   pencilsSprites:
   - {fileID: 6739634256364614979, guid: 57601278f400990468f007c8ac0795e9, type: 3}
-  - {fileID: 8248099764217746175, guid: 1466abeac07b2e94598cfd28a06a9dc4, type: 3}
   - {fileID: 2701333724628385646, guid: 2259d992e1a7aaf40b073d99a8c64f0f, type: 3}
+  - {fileID: 8248099764217746175, guid: 1466abeac07b2e94598cfd28a06a9dc4, type: 3}
 --- !u!65 &457566210
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -765,7 +767,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 575140027}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b076c323b24cef242ae8eace65e7b0af, type: 3}
+  m_Script: {fileID: 11500000, guid: 541c4862b1924b14690a22f2b0bca11b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 4
@@ -774,7 +776,7 @@ MonoBehaviour:
   countdown: {fileID: 2017091720}
   AS: {fileID: 575140030}
   beep: {fileID: 8300000, guid: 2f20f98740c05c447b67e76ecd8369e8, type: 3}
-  end_beep: {fileID: 8300000, guid: 90a888561008eb44cb6d534245fcc0f2, type: 3}
+  end_beep: {fileID: 0}
   main_theme: {fileID: 8300000, guid: ee82603d6ba6f104087a7dcc60621dda, type: 3}
   timeToEnd: 3
   end: {fileID: 613703249}
@@ -975,11 +977,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 709115589}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be0f7bf15daf51442a185ccd8c82c174, type: 3}
+  m_Script: {fileID: 11500000, guid: f6b2dfd9433bf5f41a252784c0350c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 2018449977}
+  - {fileID: 2018449978}
+  - {fileID: 1614576975}
+  - {fileID: 2006111406}
   spawnFreq: 3
 --- !u!4 &709115591
 Transform:
@@ -1021,14 +1025,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 866959492}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be0f7bf15daf51442a185ccd8c82c174, type: 3}
+  m_Script: {fileID: 11500000, guid: f6b2dfd9433bf5f41a252784c0350c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 2018449977}
-  - {fileID: 1614576974}
-  - {fileID: 2006111405}
-  spawnFreq: 5
+  - {fileID: 2018449978}
+  - {fileID: 1614576975}
+  - {fileID: 2006111406}
+  spawnFreq: 3
 --- !u!4 &866959494
 Transform:
   m_ObjectHideFlags: 0
@@ -1069,14 +1073,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 880596569}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be0f7bf15daf51442a185ccd8c82c174, type: 3}
+  m_Script: {fileID: 11500000, guid: f6b2dfd9433bf5f41a252784c0350c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 2018449977}
-  - {fileID: 1614576974}
-  - {fileID: 2006111405}
-  spawnFreq: 5
+  - {fileID: 2018449978}
+  - {fileID: 1614576975}
+  - {fileID: 2006111406}
+  spawnFreq: 3
 --- !u!4 &880596571
 Transform:
   m_ObjectHideFlags: 0
@@ -1117,14 +1121,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 928840001}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be0f7bf15daf51442a185ccd8c82c174, type: 3}
+  m_Script: {fileID: 11500000, guid: f6b2dfd9433bf5f41a252784c0350c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 2018449977}
-  - {fileID: 1614576974}
-  - {fileID: 2006111405}
-  spawnFreq: 5
+  - {fileID: 2018449978}
+  - {fileID: 1614576975}
+  - {fileID: 2006111406}
+  spawnFreq: 3
 --- !u!4 &928840003
 Transform:
   m_ObjectHideFlags: 0
@@ -1311,11 +1315,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1127770097}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be0f7bf15daf51442a185ccd8c82c174, type: 3}
+  m_Script: {fileID: 11500000, guid: f6b2dfd9433bf5f41a252784c0350c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 2018449977}
+  - {fileID: 2018449978}
+  - {fileID: 1614576975}
+  - {fileID: 2006111406}
   spawnFreq: 3
 --- !u!4 &1127770099
 Transform:
@@ -1437,10 +1443,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1170557693}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ace8943899965854f98575c006115ac0, type: 3}
+  m_Script: {fileID: 11500000, guid: dc2b8240331148842bb156cc1b6ab913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 7
 --- !u!114 &1170557699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1450,7 +1456,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1170557693}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85097489987aca3498baae6272f28578, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d2f864c3336a914681bb4f3a408f92b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   colorCode: RED
@@ -1565,7 +1571,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1245233824}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85097489987aca3498baae6272f28578, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d2f864c3336a914681bb4f3a408f92b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   colorCode: GREEN
@@ -1578,10 +1584,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1245233824}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ace8943899965854f98575c006115ac0, type: 3}
+  m_Script: {fileID: 11500000, guid: dc2b8240331148842bb156cc1b6ab913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 7
 --- !u!135 &1245233829
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1821,13 +1827,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1400171008}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be0f7bf15daf51442a185ccd8c82c174, type: 3}
+  m_Script: {fileID: 11500000, guid: f6b2dfd9433bf5f41a252784c0350c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 2018449977}
-  - {fileID: 1614576974}
-  - {fileID: 2006111405}
+  - {fileID: 2018449978}
+  - {fileID: 1614576975}
+  - {fileID: 2006111406}
   spawnFreq: 3
 --- !u!4 &1400171010
 Transform:
@@ -1869,14 +1875,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1459493105}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be0f7bf15daf51442a185ccd8c82c174, type: 3}
+  m_Script: {fileID: 11500000, guid: f6b2dfd9433bf5f41a252784c0350c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 2018449977}
-  - {fileID: 1614576974}
-  - {fileID: 2006111405}
-  spawnFreq: 5
+  - {fileID: 2018449978}
+  - {fileID: 1614576975}
+  - {fileID: 2006111406}
+  spawnFreq: 3
 --- !u!4 &1459493107
 Transform:
   m_ObjectHideFlags: 0
@@ -1969,15 +1975,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1614576972}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 170aa6df242b9be4b9f1c26a839af4ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d2f864c3336a914681bb4f3a408f92b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 5638454710951853841, guid: 138fb481680f7e841bd11c1c404feeb5, type: 3}
-  monigoteDestiny: {fileID: 405579928}
-  speed: 1
-  gameManager: {fileID: 575140029}
-  points: 5
-  win: {fileID: 121434464}
+  colorCode: GREEN
 --- !u!114 &1614576975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1987,10 +1988,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1614576972}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85097489987aca3498baae6272f28578, type: 3}
+  m_Script: {fileID: 11500000, guid: a1279d1acf129e7498ac3fecb354bb46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCode: GREEN
+  sprite: {fileID: 5638454710951853841, guid: 138fb481680f7e841bd11c1c404feeb5, type: 3}
+  monigoteDestiny: {fileID: 405579928}
+  speed: 1.5
+  gameManager: {fileID: 575140029}
+  points: 5
+  win: {fileID: 121434464}
 --- !u!65 &1614576976
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2044,11 +2050,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1639814442}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be0f7bf15daf51442a185ccd8c82c174, type: 3}
+  m_Script: {fileID: 11500000, guid: f6b2dfd9433bf5f41a252784c0350c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 2018449977}
+  - {fileID: 2018449978}
+  - {fileID: 1614576975}
+  - {fileID: 2006111406}
   spawnFreq: 3
 --- !u!4 &1639814444
 Transform:
@@ -2430,7 +2438,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1794194819}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85097489987aca3498baae6272f28578, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d2f864c3336a914681bb4f3a408f92b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   colorCode: BLUE
@@ -2443,10 +2451,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1794194819}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ace8943899965854f98575c006115ac0, type: 3}
+  m_Script: {fileID: 11500000, guid: dc2b8240331148842bb156cc1b6ab913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 7
 --- !u!135 &1794194824
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2552,15 +2560,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2006111403}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 170aa6df242b9be4b9f1c26a839af4ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d2f864c3336a914681bb4f3a408f92b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: -2626655363548740108, guid: 138fb481680f7e841bd11c1c404feeb5, type: 3}
-  monigoteDestiny: {fileID: 405579928}
-  speed: 1
-  gameManager: {fileID: 575140029}
-  points: 5
-  win: {fileID: 121434464}
+  colorCode: RED
 --- !u!114 &2006111406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2570,10 +2573,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2006111403}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85097489987aca3498baae6272f28578, type: 3}
+  m_Script: {fileID: 11500000, guid: a1279d1acf129e7498ac3fecb354bb46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCode: RED
+  sprite: {fileID: -2626655363548740108, guid: 138fb481680f7e841bd11c1c404feeb5, type: 3}
+  monigoteDestiny: {fileID: 405579928}
+  speed: 1.5
+  gameManager: {fileID: 575140029}
+  points: 5
+  win: {fileID: 121434464}
 --- !u!65 &2006111407
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2726,15 +2734,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2018449976}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 170aa6df242b9be4b9f1c26a839af4ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d2f864c3336a914681bb4f3a408f92b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: -4988117713768498622, guid: 138fb481680f7e841bd11c1c404feeb5, type: 3}
-  monigoteDestiny: {fileID: 405579928}
-  speed: 1
-  gameManager: {fileID: 575140029}
-  points: 5
-  win: {fileID: 121434464}
+  colorCode: BLUE
 --- !u!114 &2018449978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2744,10 +2747,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2018449976}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85097489987aca3498baae6272f28578, type: 3}
+  m_Script: {fileID: 11500000, guid: a1279d1acf129e7498ac3fecb354bb46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorCode: BLUE
+  sprite: {fileID: 5313552975283176849, guid: f33a79e0c8cd7a64db1ad1c7dbaacfa2, type: 3}
+  monigoteDestiny: {fileID: 405579928}
+  speed: 1.5
+  gameManager: {fileID: 575140029}
+  points: 5
+  win: {fileID: 121434464}
 --- !u!65 &2018449979
 BoxCollider:
   m_ObjectHideFlags: 0
